@@ -6,4 +6,5 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "gyms.py"]
+CMD ["python", "city_analysis.py"]
+CMD ["python", "reviews_analysis.py"]
