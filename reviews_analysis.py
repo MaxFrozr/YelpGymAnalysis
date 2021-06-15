@@ -32,8 +32,8 @@ lda_model = gensim.models.LdaModel(buffered_corpus, num_topics=10, id2word=corpu
                                    alpha='auto', chunksize=1000, random_state=1, passes=5)
 
 # show list of topics
+print(lda_model.show_topics(formatted=True))
 topics = lda_model.show_topics(formatted=False)
-print(topics)
 
 # convert topics to the dataframe of topic id, word and word weight
 word_weigths = []
